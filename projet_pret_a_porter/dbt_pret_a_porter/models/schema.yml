@@ -1,0 +1,38 @@
+version: 2
+
+models:
+
+  - name: stg_clients
+    columns:
+      - name: id_client
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_commandes
+    columns:
+      - name: id_commande
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_lignes_commande
+    columns:
+      - name: id_ligne
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_produits
+    columns:
+      - name: id_produit
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_retours
+    columns:
+      - name: id_retour
+        data_tests:
+          - not_null
+          - unique

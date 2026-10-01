@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: pret_a_porter
+    schema: bronze
+
+    tables:
+      - name: clients
+      - name: commandes
+      - name: lignes_commande
+      - name: produits
+      - name: retours
